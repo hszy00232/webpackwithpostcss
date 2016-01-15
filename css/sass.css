@@ -1,0 +1,22 @@
+/* 引用 */
+@import "_base.css";
+.square{
+	color: $color;
+	background:$blue;  
+	border-radius:$radius;  
+}
+/* 嵌套，变量和混入 */
+.button{
+	@mixin square 200px;  
+	background:$green;  
+	&:hover{
+		background:$blue;
+	}  
+}
+/* "至少"数量的兄弟元素应用样式 */
+.container > .item:at-least(3){
+	background:$blue;  
+}
+p {
+	text:300 uppercase dimgrey center 1.6rem 1.7 .05em;
+}

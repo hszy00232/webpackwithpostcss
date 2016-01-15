@@ -1,0 +1,9 @@
+$blue:#2269E8;
+$green:#19DE8B;
+$radius:10px;
+$color:#ffffff;
+/* 混入（Mixins） */
+@define-mixin square $dimension{
+	width:$dimension;  
+	height:$dimension;  
+}
